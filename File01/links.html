@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        a:link, a:visited{
+            background-color: #f44336;
+            color:white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover, a:active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.w3schools.com/" target="_balnk">Visit w3schools.com</a>
+    <hr>
+
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3.org">W3C</a></p>
+    <p><a href="https://www.google.com">Google</a></p>
+
+    <h2>Relative URLs</h2>
+    <p><a href="../File01/img/pic1.jpg">Car track</a></p>
+    <p><a href="../File01/Text.html"></a>the Text </p>
+
+    <!-- HTML Links Use an image as a link -->
+    <a href="Text.html" target="_balnk">
+        <img src="img/pic1.jpg" alt="a Car" style="width: 42px; height: auto;" >
+    </a>
+    <hr>
+    <!-- Email links -->
+
+    <a href="mailto:alizokaeaidehaghani@gmail.com" target="_blank">Send email</a>
+    <hr>
+
+    <!-- button -->
+    <button onclick="document.location='Text.html'">Text files</button>
+    <hr>
+    <!-- Title links -->
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section" target="_blank">Visit our HTML Tutorial</a>
+    <hr>
+
+</body>
+</html>
