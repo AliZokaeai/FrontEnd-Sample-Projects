@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of the classes and JavaScripts</title>
+</head>
+<body>
+    <h2>Use of the class Attribute in JavaScript</h2>
+    <p>Click the button to hide all elements with class name "city":</p>
+
+    <button onclick="myfunctionhide()">Hide elemetns</button>
+    <button onclick="myfunctionshow()">show elemetns</button>
+
+    <h2 class="city">London</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ad!</p>
+
+    <h2 class="city">Paris</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugiat.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, veniam.</p>
+
+
+    <hr>
+
+    <h2>Using the id Attribute in JavaScript</h2>
+    <p>JavaScript can Access an element with a specified id by using the getElementByID methed:</p>
+
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Chang text</button>
+    <script>
+        function myfunctionhide(){
+            var x =document.getElementsByClassName("city");
+            for(var i = 0; i<x.length; i++){
+                x[i].style.display="none";
+            }
+        }
+
+        function myfunctionshow(){
+            var x = document.getElementsByClassName("text");
+            for(var i = 0; i <x.length; i++){
+                x[i].style.color="red";
+            }
+        }
+
+        function displayResult(){
+            document.getElementById("myHeader").innerHTML="Have a nice day!"
+        }
+    </script>
+</body>
+</html>
