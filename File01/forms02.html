@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h2>HTML Forms</h2>
+
+    <form
+      action="/action_page.php"
+      target="_blank"
+      method="get"
+      autocomplete="off"
+    >
+      <fieldset style="width: 50%">
+        <legend>person information</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" name="fname" id="fname" value="Ali" />
+        <br /><br />
+
+        <label for="lanme">Last name:</label><br />
+        <input type="text" name="lname" id="lname" value="Zokaea" />
+        <br /><br />
+      </fieldset>
+      <label for="uemail">Email:</label><br />
+      <input
+        type="email"
+        name="uemail"
+        id="uemail"
+        placeholder="enter your email"
+      />
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+  <p>
+    If you click the "Submit" button, the form_data will be sent to a page
+    called "/action_page.php".
+  </p>
+  <hr />
+
+  <h2>The selet Element</h2>
+  <p>The select elemetn defines a drop-down list:</p>
+  <form action="#">
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars" size="4" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="saab" selected>Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <br /><br />
+    <textarea name="message" id="mestext" cols="30" rows="10">
+The cat was playing in the garden</textarea
+    >
+    <br /><br />
+
+    <button type="button" onclick="alert('Hello Ali!')">Click me!</button>
+    <input type="submit" value="Submit" />
+  </form>
+  <hr />
+
+  <h2>The detailst Element</h2>
+  <p>
+    the datilst element specifies a list of pre-defined options for an input
+    element.
+  </p>
+
+  <form action="#">
+    <input list="browsers" name="browsers" />
+    <datalist id="browsers">
+      <option value="Internet Explorer"></option>
+      <option value="Firefox"></option>
+      <option value="Chrome"></option>
+      <option value="Opera"></option>
+      <option value="Safari"></option>
+    </datalist>
+    <br /><br />
+    <input type="submit" value="Submit" />
+  </form>
+  <hr />
+
+  <h2>the output Element</h2>
+  <p>the output element represents the reuslt of a calculation</p>
+  <form action="#" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50" />
+    100 +
+    <input type="number" name="b" id="b" value="50" />
+
+    <output name="x" for="a b"></output>
+    <br /><br />
+    <input type="submit" />
+  </form>
+  <p>
+    <strong>Note:</strong> The output element is not supported in edge pror
+    version 13.
+  </p>
+</html>
