@@ -73,3 +73,11 @@ input[type="checkbox"]{
         filter:hue-rotate(360deg);
     }
 }
+
+.myclass{
+    width: 100px;
+    height: 10px;
+}
+.test{
+    background-color: red;
+}

@@ -9,3 +9,4 @@ const sayHelloLinting = (fName) => {
 };
 
 sayHelloLinting("James");
+const allo = "1";
