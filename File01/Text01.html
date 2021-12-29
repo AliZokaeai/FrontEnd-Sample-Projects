@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Thext</title>
+    <style>
+      div {
+        border: 1px solid gray;
+        padding: 8px;
+      }
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #4caf50;
+      }
+
+      p {
+        text-indent: 50px;
+        text-align: justify;
+        letter-spacing: 2px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #008cba;
+      }
+      p.one {
+        text-align-last: right;
+      }
+      p.tow {
+        text-align-last: center;
+      }
+      p.three {
+        text-align-last: justify;
+      }
+
+      img.a {
+        vertical-align: baseline;
+      }
+
+      img.b {
+        vertical-align: text-top;
+      }
+
+      img.c {
+        vertical-align: text-bottom;
+      }
+
+      img.d {
+        vertical-align: sub;
+      }
+
+      img.e {
+        text-align: super;
+      }
+
+      p.uppercase {
+        text-transform: uppercase;
+      }
+
+      p.lowercase {
+        text-transform: lowercase;
+      }
+
+      p.captialize {
+        text-transform: capitalize;
+      }
+      p.small {
+        line-height: 0.7;
+      }
+      p.big {
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Text formatting</h1>
+      <p>
+        This is styled with some of the text formatting properties. the headig
+        uses text-align, text-transform, and color properties. the paragrapg is
+        indented, aligined, and the space between charachters is specified. The
+        underline is removed from this colored.
+        <a href="#" target="_blank">Try yoursect</a>
+      </p>
+
+      <div>
+        <h2>text align last right</h2>
+        <p class="one">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quas
+          at, alias, quibusdam vitae aspernatur excepturi animi odio incidunt
+          velit obcaecati! Iure amet dolorem, neque assumenda odio quos iusto
+          sit.
+        </p>
+
+        <h2>text align last center</h2>
+        <p class="tow">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quas
+          at, alias, quibusdam vitae aspernatur excepturi animi odio incidunt
+          velit obcaecati! Iure amet dolorem, neque assumenda odio quos iusto
+          sit.
+        </p>
+
+        <h2>text align last justify</h2>
+        <p class="therr">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quas
+          at, alias, quibusdam vitae aspernatur excepturi animi odio incidunt
+          velit obcaecati! Iure amet dolorem, neque assumenda odio quos iusto
+          sit.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <h1>The vertical-aling Property</h1>
+    <h2>Vaerical-align: baseline(default):</h2>
+    <p>
+      An <img class="a" src="img/sqpurple.gif" width="9" height="9" /> image
+      with a defalt alignment.
+    </p>
+
+    <h2>vertical-align: text-top:</h2>
+    <p>
+      <img src="img/sqpurple.gif" alt="scquer" width="9" height="9" class="b" />
+      image with a text-top alignment
+    </p>
+
+    <h2>vertical-align: text-bottom:</h2>
+    <p>
+      <img
+        src="img/sqpurple.gif"
+        alt="sqpurple"
+        width="9"
+        height="9"
+        class="c"
+      />
+      image with a text-bottom alignment.
+    </p>
+    <h2>vertical-align: sub:</h2>
+    <p>
+      An
+      <img src="img/sqpurple.gif" alt="squere" width="9" height="9" class="d" />
+      image with a sub alignment.
+    </p>
+
+    <h2>vertical-align: sup:</h2>
+    <p>
+      <img src="img/sqpurple.gif" alt="squere" class="e" width="9" height="9" />
+      image with a super alignment
+    </p>
+
+    <p class="uppercase">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+      commodi eius totam iure itaque deleniti quaerat, consectetur
+      necessitatibus. Dolor iste sunt doloremque nihil, voluptas magnam est
+      veritatis temporibus omnis nemo.
+    </p>
+    <p class="lowercase">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+      commodi eius totam iure itaque deleniti quaerat, consectetur
+      necessitatibus. Dolor iste sunt doloremque nihil, voluptas magnam est
+      veritatis temporibus omnis nemo.
+    </p>
+    <p class="captialize">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+      commodi eius totam iure itaque deleniti quaerat, consectetur
+      necessitatibus. Dolor iste sunt doloremque nihil, voluptas magnam est
+      veritatis temporibus omnis nemo.
+    </p>
+    <hr />
+
+    <p class="big">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam nisi Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit. Ullam nisi Lorem ipsum
+      dolor sit, amet consectetur adipisicing elit. Ullam nisi Lorem ipsum dolor
+      sit, amet consectetur adipisicing elit. Ullam nisi Lorem ipsum dolor sit,
+      amet consectetur adipisicing elit. Ullam nisi Lorem ipsum dolor sit, amets
+      consectetur adipisicing elit. Ullam nisi deserunt voluptas animi tempora
+      tenetur perferendis temporibus enim. Excepturi, facilis optio? Id
+      quibusdam magni aliquam, obcaecati nobis libero inventore officia!
+    </p>
+    <p class="small">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. In iste quo odio
+      debitis fugit veniam fuga dignissimos laborum commodi consectetur. Est
+      debitis fugit veniam fuga dignissimos laborum commodi consectetur. Est
+      debitis fugit veniam fuga dignissimos laborum commodi consectetur. Est
+      debitis fugit veniam fuga dignissimos laborum commodi consectetur. Est
+      debitis fugit veniam fuga dignissimos laborum commodi consectetur. Est
+      debitis fugit veniam fuga dignissimos laborum commodi consectetur. Est
+      nulla at unde eveniet sunt minima distinctio nisi doloremque.
+    </p>
+  </body>
+</html>
