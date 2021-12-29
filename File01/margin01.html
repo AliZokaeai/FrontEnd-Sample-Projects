@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Margins</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        margin-right: 150px;
+        margin-left: 80px;
+        padding: 10px;
+      }
+
+      p.short {
+        margin: 100px 150px 20px 80px;
+        padding: 10;
+        border: 1px solid #000;
+      }
+
+      div {
+        border: 1px solid red;
+        margin-left: 100px;
+      }
+
+      p.ex1 {
+        margin-left: inherit;
+      }
+
+      h1 {
+        margin: 0 0 50px 0;
+        border-style: outset;
+        outline: 50px solid red;
+      }
+
+      h2 {
+        margin: 20px 0 0 0;
+        border-style: outset;
+        outline: 20px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque hic autem
+      accusantium eius reprehenderit suscipit deleniti tenetur vel sit velit,
+      cupiditate illo sint amet minima inventore assumenda dolorum accusamus
+      quod.
+    </p>
+    <p class="short">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo odio optio
+      veniam, harum ullam dolore voluptatibus eligendi laboriosam non minus nemo
+      aspernatur, vitae ducimus fugit suscipit quis alias? Cum, praesentium.
+    </p>
+
+    <div>
+      <p class="ex1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores odio
+        iusto veritatis tempora eum dicta deserunt nostrum officia itaque?
+        Exercitationem voluptate eius aliquid explicabo tempore libero laborum
+        necessitatibus nostrum ipsa.
+      </p>
+    </div>
+    <hr />
+
+    <p>
+      In this example the h1 element has a bottom margin of 50 px and h2 element
+      has a top margin of 20 px. so the vertical margin between h1 and h2 should
+      have been 70px (50px + 20px), However, due to margin collapse, the actual
+      margin ends up being 50px.
+    </p>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+  </body>
+</html>

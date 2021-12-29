@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Width and height</title>
+    <style>
+      div {
+        height: 200px;
+        width: 50%;
+        background-color: powderblue;
+      }
+      div.w2 {
+        height: 100px;
+        width: 500px;
+        background-color: yellow;
+      }
+      div.w3 {
+        max-width: 500px;
+        height: 100px;
+        background: orange;
+      }
+
+      div.w4 {
+        min-width: 500px;
+        height: 100px;
+        background-color: orchid;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Set height and width of an element</h2>
+    <div>This div element hast a height of 200px and a width of 50%.</div>
+    <hr />
+
+    <h2>Set the height and width of an element</h2>
+    <div class="w2">
+      This dive element has a height of 100px and a width of 500px.
+    </div>
+    <hr />
+
+    <h2>Set the max-width of an element</h2>
+    <div class="w3">
+      This div element has a height of 100px and a max-width of 500px
+    </div>
+    <p>Resize the browser window to see the effect</p>
+    <hr />
+
+    <div class="w4">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem iure
+        dolores sapiente inventore rerum, possimus, eius ullam harum a nisi
+        quaerat aperiam deserunt laudantium sint quae dolor sequi expedita
+        quibusdam.
+      </p>
+    </div>
+  </body>
+</html>
