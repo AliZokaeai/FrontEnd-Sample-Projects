@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postion Style</title>
+    <style>
+      div.relatvie {
+        position: relative;
+        left: 30px;
+        border: 30px solid #73ad21;
+      }
+      div.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 400px;
+        font-size: 2em;
+        background-color: aqua;
+        border: 3px solid #73ad21;
+      }
+      div.relative {
+        position: relative;
+        width: 80px;
+        right: 0;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73ad21;
+      }
+
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 10px;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73ad21;
+      }
+
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 5em;
+        padding: 5px;
+        background-color: #cae8ca;
+        border: 2px solid #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Postition: Relative</h2>
+    <p>
+      An element with postion:relative; is positioned relative to its normal
+      postion:
+    </p>
+    <div class="relative">This div element has poiton: relative;</div>
+    <hr />
+    <h2>Postion: fixed;</h2>
+
+    <p>
+      An element with postion:fixed; is positionded relative to the viewport,
+      which means it always stays in the same place even if the page scrolled:
+    </p>
+    <div class="sticky">I am sticky</div>
+    <p style="font-size: 3em">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus laboriosam
+      distinctio obcaecati labore enim, explicabo molestiae voluptate ex, iste
+      voluptatem nemo, id aperiam blanditiis in aut! Voluptatum veniam esse
+      voluptatem nemo, id aperiam blanditiis in aut! Voluptatum veniam esse
+      voluptatem nemo, id aperiam blanditiis in aut! Voluptatum veniam esse
+      recusandae! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Molestias error magni eligendi officia voluptates porro, blanditiis minus
+      et expedita fugiat doloribus obcaecati perspiciatis odit laboriosam
+      facilis unde mollitia iste ad. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Ea esse possimus laborum officia mollitia vitae, saepe
+      temporibus atque quia eum nostrum, quod, quae blanditiis optio facere unde
+      incidunt. Ex, blanditiis.
+    </p>
+
+    <p style="font-size: 3em">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus laboriosam
+      distinctio obcaecati labore enim, explicabo molestiae voluptate ex, iste
+      voluptatem nemo, id aperiam blanditiis in aut! Voluptatum veniam esse
+      voluptatem nemo, id aperiam blanditiis in aut! Voluptatum veniam esse
+      voluptatem nemo, id aperiam blanditiis in aut! Voluptatum veniam esse
+      recusandae! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Molestias error magni eligendi officia voluptates porro, blanditiis minus
+      et expedita fugiat doloribus obcaecati perspiciatis odit laboriosam
+      facilis unde mollitia iste ad. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Ea esse possimus laborum officia mollitia vitae, saepe
+      temporibus atque quia eum nostrum, quod, quae blanditiis optio facere unde
+      incidunt. Ex, blanditiis.
+    </p>
+    <p style="font-size: 3em">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus laboriosam
+      distinctio obcaecati labore enim, explicabo molestiae voluptate ex, iste
+      voluptatem nemo, id aperiam blanditiis in aut! Voluptatum veniam esse
+      voluptatem nemo, id aperiam blanditiis in aut! Voluptatum veniam esse
+      voluptatem nemo, id aperiam blanditiis in aut! Voluptatum veniam esse
+      recusandae! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Molestias error magni eligendi officia voluptates porro, blanditiis minus
+      et expedita fugiat doloribus obcaecati perspiciatis odit laboriosam
+      facilis unde mollitia iste ad. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Ea esse possimus laborum officia mollitia vitae, saepe
+      temporibus atque quia eum nostrum, quod, quae blanditiis optio facere unde
+      incidunt. Ex, blanditiis.
+    </p>
+    <div class="fixed">This div element has postion: fixed;</div>
+    <hr />
+    <h2>Postion : aboslute;</h2>
+    <p>
+      An element with position: absolute; is positoned relative to the nearest
+      positioned ancestor (instead of postioned relative to the view, like
+      fixed):
+    </p>
+    <div class="relative">
+      <p>This div element has position: relavtie;</p>
+      <div class="absolute">this div element has postion: absolute;</div>
+    </div>
+    <hr />
+  </body>
+</html>
