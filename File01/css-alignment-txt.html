@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The clearfix Hack</title>
+    <style>
+      div {
+        border: 3px solid #4caf50;
+        padding: 5px;
+      }
+      .img1 {
+        float: right;
+      }
+      .img2 {
+        float: right;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .centerVertically {
+        padding: 70px 0;
+        border: 3px solid green;
+      }
+      .centerDiv {
+        line-height: 200px;
+        height: 200px;
+        border: 3px solid green;
+        text-align: center;
+      }
+
+      .centerDiv p {
+        line-height: 1.5;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .centerDivWithPostion {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+
+      .centerDivWithPostion p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      .centerDivFlexBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 3px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>whitout Clearfix</h2>
+    <p>
+      This image is floated to the right. It is also taller than the element
+      containing it, so it overflow outside of its container:
+    </p>
+    <div>
+      <img
+        src="img/pic2.jpg"
+        alt="the pic"
+        width="170"
+        height="170"
+        class="img1"
+      />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      aperiam, odit minima deleniti quisquam similique iste voluptatibus
+      repudiandae impedit officiis quidem officia deserunt commodi laudantium
+      veniam sapiente optio totam quo
+    </div>
+
+    <h2 style="clear: right">With New modern Clearfix</h2>
+    <p>Add the clearfix hack to the containing element, to fix thix problem:</p>
+
+    <div class="clearfix">
+      <img
+        src="img/pic3.jpg"
+        alt="the pic"
+        width="170"
+        height="170"
+        class="img2"
+      />
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa,
+      veritatis eaque facilis dolor earum provident animi beatae. Qui quidem
+      repudiandae rem id accusantium veritatis nulla corrupti, tenetur voluptas
+      quaerat!
+    </div>
+    <hr />
+    <h2>Center vertically with padding</h2>
+    <p>
+      In this example, we use the padding property to center the div element
+      vertically:
+    </p>
+
+    <div class="centerVertically">
+      <p>I am vertically centerd.</p>
+    </div>
+
+    <hr />
+
+    <h2>Center with line-height</h2>
+    <p>
+      In this example, we use the line-height property with a value that is
+      equal to the height property to center the dive element:
+    </p>
+
+    <div class="centerDiv">
+      <p>I am vertically and horizontally centerd.</p>
+    </div>
+    <hr />
+
+    <h2>Center with positon and transform</h2>
+    <p>
+      In this example, we use positioning and the transform property to
+      vertically and horizontally center the dive element:
+    </p>
+    <div class="centerDivWithPostion">
+      <p>I am vertically and horizontally centered.</p>
+    </div>
+    <hr />
+
+    <h2>FlexBox Centering</h2>
+    <p>
+      A container with both the justify-content and align-items properties set
+      to <em>center</em> will align the itme(s) in the center (in both axis).
+    </p>
+
+    <div class="centerDivFlexBox">
+      <p>I am vertically and horizontally centered.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aligne text</title>
+    <style>
+      .center {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+      }
+      .centerText {
+        text-align: center;
+      }
+      .centerImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
+      .rightTxt {
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        border: 3px solid #73ad21;
+        padding: 10px;
+        clear: right;
+      }
+      .rightTxt::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .rightFloatText {
+        float: right;
+        width: 300px;
+        border: 3px solid #73ad21;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center centerText">This div element is centered</div>
+
+    <img src="img/pic1.jpg" alt="the car" class="centerImg" />
+
+    <div class="rightTxt">
+      <p class="">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam sapiente
+        ducimus quidem obcaecati et. Eum repudiandae ipsam enim quaerat quae.
+        Consequatur deleniti labore libero magni debitis sed, tenetur excepturi
+        aperiam?
+      </p>
+    </div>
+
+    <br />
+
+    <div class="rightFloatText">
+      <p class="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        molestias doloribus commodi cumque necessitatibus porro ipsam excepturi
+        magnam architecto atque animi, error asperiores saepe, vitae tenetur?
+        Autem obcaecati nulla dolores?
+      </p>
+    </div>
+  </body>
+</html>
