@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the CSS comninators</title>
+    <style>
+      /* div p {
+        background-color: yellow;
+      } */
+
+      /* div > p {
+        background-color: blue;
+        color: wheat;
+      } */
+
+      /* div + p {
+        background-color: tomato;
+        color: thistle;
+      } */
+
+      div ~ p {
+        background-color: yellowgreen;
+        color: #1b1b1b;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Descendant Selector</h2>
+    <p>
+      The Descendant selector matches all element that are descendant of a
+      specified element.
+    </p>
+    <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <section><p>Paragraph 3 in the div.</p></section>
+    </div>
+
+    <p>Paragraph 4. not in the div.</p>
+    <p>Paragraph 5. not itn a div.</p>
+  </body>
+</html>
