@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Pseudo classes</title>
+    <style>
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        color: hotpink;
+      }
+
+      a:active {
+        color: blue;
+      }
+
+      a.highlight:hover {
+        color: #ff0000;
+        font-size: 22px;
+      }
+      div {
+        background-color: green;
+        color: white;
+        padding: 25px;
+        text-align: center;
+      }
+
+      div:hover p {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Styleing a link depending on state</h2>
+    <p>
+      <b><a href="#" target="_blank">This is a link</a></b>
+    </p>
+    <p>
+      <b>Note:</b> a:hover MUST come after:link and a:visited in the css
+      definition is order to be effective.
+    </p>
+    <p>
+      <b>Note:</b> a:active MUST come after a:hover in the CSS definition in
+      order to be effective.
+    </p>
+
+    <hr />
+    <p>Mouse over the dive element below to change its background color:</p>
+
+    <div><p>Mouse over ME</p></div>
+  </body>
+</html>
