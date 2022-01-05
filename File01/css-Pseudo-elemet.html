@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+    <style>
+      p::first-line {
+        color: #ff0000;
+        font-variant: small-caps;
+      }
+      p::first-letter {
+        color: blue;
+        font-size: 3em;
+      }
+      h1::first-letter {
+        color: red;
+        font-size: 2em;
+        font-weight: bold;
+      }
+      h1::before {
+        content: url("img/sqpurple.gif");
+      }
+      ::marker {
+        color: red;
+        font-size: 23px;
+      }
+
+      ::selection {
+        color: whitesmoke;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The title</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quae nisi
+      officia quasi quaerat exercitationem, laboriosam ex perferendis nesciunt,
+      provident alias tempore culpa sint explicabo ducimus esse assumenda
+      inventore commodi? Nesciunt labore repellat numquam necessitatibus
+      cupiditate fugit, enim modi ut, commodi aperiam eaque adipisci
+      perspiciatis excepturi vero rem tempora dolore quidem doloremque ea soluta
+      quaerat inventore. Quia nemo sed quisquam. Facilis aut fugit libero quidem
+      aspernatur amet ipsam ducimus. Quisquam reiciendis vel aperiam ipsum
+      consequatur blanditiis temporibus, ex, nesciunt animi incidunt provident
+      quae deleniti architecto itaque repudiandae ut officia? Possimus.
+    </p>
+
+    <ul>
+      <li>Coffeed</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+  </body>
+</html>
