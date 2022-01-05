@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        margin: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        height: 100%;
+        position: fixed;
+        background-color: #f1f1f1;
+        border: 1px solid #555;
+        overflow: auto;
+      }
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+      li {
+        text-align: center;
+        border-bottom: 1px solid #555;
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+      li a.active {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      li a.active:hover {
+        background-color: #03422b;
+        color: white;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      div {
+        margin-left: 25%;
+        padding: 1px 16px;
+        height: 1000px;
+      }
+      div p {
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <div>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <h3>Lorem, ipsum dolor.</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, recusandae
+        repudiandae vel inventore quisquam magnam? Reprehenderit veniam,
+        perferendis molestias omnis repellat delectus voluptatibus illum.
+        Maiores ratione cupiditate sed in nihil.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, recusandae
+        repudiandae vel inventore quisquam magnam? Reprehenderit veniam,
+        perferendis molestias omnis repellat delectus voluptatibus illum.
+        Maiores ratione cupiditate sed in nihil.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, recusandae
+        repudiandae vel inventore quisquam magnam? Reprehenderit veniam,
+        perferendis molestias omnis repellat delectus voluptatibus illum.
+        Maiores ratione cupiditate sed in nihil.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, recusandae
+        repudiandae vel inventore quisquam magnam? Reprehenderit veniam,
+        perferendis molestias omnis repellat delectus voluptatibus illum.
+        Maiores ratione cupiditate sed in nihil.
+      </p>
+    </div>
+  </body>
+</html>
