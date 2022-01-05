@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizental navbar</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      li {
+        float: left;
+        border-right: 1px solid #bbb;
+      }
+      li:last-child {
+        border-right: none;
+        float: right;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover:not(.active) {
+        background-color: #111;
+        text-decoration: none;
+        padding: 14px 16px 9px 16px;
+        border-bottom-style: inset;
+        border-bottom-width: 5px;
+        border-bottom-color: wheat;
+        box-shadow: inset 0px -10px 31px -1px rgba(173, 255, 179, 0.36);
+      }
+      .floatRight {
+        float: right;
+      }
+
+      .active {
+        background-color: #04aa6d;
+      }
+
+      .active:hover {
+        background-color: green;
+      }
+      div {
+        padding: 20px;
+        margin-top: 30px;
+        background-color: #1abc9c;
+        height: 1500px;
+      }
+
+      h2 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 2em;
+      }
+      ::selection {
+        background-color: wheat;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" class="active"> Home</a></li>
+      <li><a href="#"> News</a></li>
+      <li><a href="#"> Contact</a></li>
+      <li><a href="#"> About</a></li>
+    </ul>
+
+    <div>
+      <h1>Fixed Top Navigation bar</h1>
+      <h2>Scroll this page to see the effect</h2>
+      <h2>
+        The navigation bar will stay at the top of the page while scrolling
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quaerat
+        quidem doloremque magni, minus incidunt repellendus odit, soluta
+        consectetur, vitae culpa perferendis quas officia at quam explicabo
+        fugiat animi? Deleniti? Repellendus nam deserunt tempore voluptatem
+        nulla ea vero ipsum? Ullam ut quae odit in voluptas. Rem architecto
+        veniam earum eum iure eligendi eveniet nesciunt optio qui omnis odit,
+        sed quibusdam. Voluptate sint neque numquam facere, commodi labore quis
+        sit voluptatibus sequi, quibusdam, consequatur quidem! Et non illo,
+        ipsam corporis omnis accusantium alias deleniti qui, nulla repellat
+        architecto beatae voluptate a. Voluptates autem esse, totam voluptate
+        quae doloremque fuga nemo a harum hic debitis exercitationem sint
+        provident ipsa voluptatibus, alias maiores perferendis nostrum aliquam
+        illo accusantium dolorem eos vel! Nam, repellat. Repellendus quam eius
+        beatae. Placeat, optio voluptatem. Repellendus neque natus deserunt
+        magnam in culpa aliquid eos asperiores est laboriosam iure similique,
+        fuga dignissimos tempora saepe? Incidunt aliquid veniam consectetur
+        facere!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quaerat
+        quidem doloremque magni, minus incidunt repellendus odit, soluta
+        consectetur, vitae culpa perferendis quas officia at quam explicabo
+        fugiat animi? Deleniti? Repellendus nam deserunt tempore voluptatem
+        nulla ea vero ipsum? Ullam ut quae odit in voluptas. Rem architecto
+        veniam earum eum iure eligendi eveniet nesciunt optio qui omnis odit,
+        sed quibusdam. Voluptate sint neque numquam facere, commodi labore quis
+        sit voluptatibus sequi, quibusdam, consequatur quidem! Et non illo,
+        ipsam corporis omnis accusantium alias deleniti qui, nulla repellat
+        architecto beatae voluptate a. Voluptates autem esse, totam voluptate
+        quae doloremque fuga nemo a harum hic debitis exercitationem sint
+        provident ipsa voluptatibus, alias maiores perferendis nostrum aliquam
+        illo accusantium dolorem eos vel! Nam, repellat. Repellendus quam eius
+        beatae. Placeat, optio voluptatem. Repellendus neque natus deserunt
+        magnam in culpa aliquid eos asperiores est laboriosam iure similique,
+        fuga dignissimos tempora saepe? Incidunt aliquid veniam consectetur
+        facere!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quaerat
+        quidem doloremque magni, minus incidunt repellendus odit, soluta
+        consectetur, vitae culpa perferendis quas officia at quam explicabo
+        fugiat animi? Deleniti? Repellendus nam deserunt tempore voluptatem
+        nulla ea vero ipsum? Ullam ut quae odit in voluptas. Rem architecto
+        veniam earum eum iure eligendi eveniet nesciunt optio qui omnis odit,
+        sed quibusdam. Voluptate sint neque numquam facere, commodi labore quis
+        sit voluptatibus sequi, quibusdam, consequatur quidem! Et non illo,
+        ipsam corporis omnis accusantium alias deleniti qui, nulla repellat
+        architecto beatae voluptate a. Voluptates autem esse, totam voluptate
+        quae doloremque fuga nemo a harum hic debitis exercitationem sint
+        provident ipsa voluptatibus, alias maiores perferendis nostrum aliquam
+        illo accusantium dolorem eos vel! Nam, repellat. Repellendus quam eius
+        beatae. Placeat, optio voluptatem. Repellendus neque natus deserunt
+        magnam in culpa aliquid eos asperiores est laboriosam iure similique,
+        fuga dignissimos tempora saepe? Incidunt aliquid veniam consectetur
+        facere!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quaerat
+        quidem doloremque magni, minus incidunt repellendus odit, soluta
+        consectetur, vitae culpa perferendis quas officia at quam explicabo
+        fugiat animi? Deleniti? Repellendus nam deserunt tempore voluptatem
+        nulla ea vero ipsum? Ullam ut quae odit in voluptas. Rem architecto
+        veniam earum eum iure eligendi eveniet nesciunt optio qui omnis odit,
+        sed quibusdam. Voluptate sint neque numquam facere, commodi labore quis
+        sit voluptatibus sequi, quibusdam, consequatur quidem! Et non illo,
+        ipsam corporis omnis accusantium alias deleniti qui, nulla repellat
+        architecto beatae voluptate a. Voluptates autem esse, totam voluptate
+        quae doloremque fuga nemo a harum hic debitis exercitationem sint
+        provident ipsa voluptatibus, alias maiores perferendis nostrum aliquam
+        illo accusantium dolorem eos vel! Nam, repellat. Repellendus quam eius
+        beatae. Placeat, optio voluptatem. Repellendus neque natus deserunt
+        magnam in culpa aliquid eos asperiores est laboriosam iure similique,
+        fuga dignissimos tempora saepe? Incidunt aliquid veniam consectetur
+        facere!
+      </p>
+    </div>
+  </body>
+</html>
