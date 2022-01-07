@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Image</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-cotent {
+        display: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      #main-pic {
+        margin: 0;
+        padding: 0;
+      }
+      .dropdown:hover #main-pic {
+        filter: grayscale(0.5);
+        cursor: zoom-in;
+      }
+      .dropdown:hover .dropdown-cotent {
+        display: block;
+      }
+      .desc {
+        padding: 15px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Dropdown Image</h2>
+    <p>Move the mouse over the image below to open the dropdown cotnet</p>
+    <div class="dropdown">
+      <img
+        src="img/pic2.jpg"
+        alt="the thumbnile pic"
+        width="100"
+        height="auto"
+        id="main-pic"
+      />
+      <div class="dropdown-cotent">
+        <img
+          src="img/pic2.jpg"
+          alt="the main picture"
+          width="300"
+          height="auto"
+        />
+        <div class="desc">Beatiful Cinque Terre</div>
+      </div>
+    </div>
+  </body>
+</html>
