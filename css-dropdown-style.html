@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the Dropdwon</title>
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdownBtn {
+        background-color: #4c1f50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdownList {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdownBtn-cotnet {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 16px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdownBtn-cotnet a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdownBtn-cotnet a:hover {
+        background-color: #f1f1f1;
+      }
+
+      .dropdownList:hover .dropdownBtn-cotnet {
+        display: block;
+      }
+
+      .dropdownBtn:hover {
+        background-color: #3e8341;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Hoverable Dropdown</h2>
+    <p>Move the mouse over the text below to open the dropdown content.</p>
+    <div class="dropdown">
+      <span>Mouse over me</span>
+      <div class="dropdown-content">
+        <p>Hellow world</p>
+      </div>
+    </div>
+    <hr />
+    <h2>Dropdown Menu</h2>
+    <p>Move the mouse over the button to open the dropdown menu.</p>
+
+    <div class="dropdownList">
+      <button class="dropdownBtn">Dropdown</button>
+      <div class="dropdownBtn-cotnet">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    <p>
+      <b>Note:</b> We use href="#" for test links. In a real web site this would
+      br URLs.
+    </p>
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed at delectus
+      eaque non adipisci doloribus, quod corrupti sint voluptate mollitia, iste,
+      possimus sunt nesciunt quisquam itaque esse tempora ex aliquam! Nulla, non
+      ab. Quisquam molestiae temporibus omnis. Itaque quidem reiciendis
+      laudantium ea ex voluptate, perspiciatis minima veniam vel quo delectus
+      temporibus dolore dolor totam perferendis laborum rerum, expedita magni
+      adipisci. Facilis est, ad repellat fugiat nesciunt quam veritatis
+      excepturi architecto numquam suscipit cum iusto aperiam nam perferendis
+      earum? Veritatis esse inventore magnam pariatur non excepturi totam
+      dolorum saepe culpa nihil! Iure, nobis! Eum aliquid aspernatur rerum
+      accusamus quam placeat ipsam, porro ullam, nulla ducimus ut. Explicabo
+      quam natus, optio culpa enim error eaque adipisci non veniam. Nesciunt
+      esse at provident. Fugit corrupti sit ipsa omnis qui, iure quisquam
+      consectetur, unde, voluptatum quaerat similique adipisci magni. Fuga, nisi
+      laboriosam. Amet repellat in non magni ratione nisi est hic at impedit
+      rem?
+    </p>
+  </body>
+</html>
