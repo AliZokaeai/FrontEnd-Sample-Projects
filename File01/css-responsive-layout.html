@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css layout responsive</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background-color: #f1f1f1;
+      }
+
+      /* Header/ Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background-color: wheat;
+      }
+
+      .header h1 {
+        font-size: 50px;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      /* style the topnav links */
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      /* Chage color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Create two unequal columns that floats next to each other  */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: #fff;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear float after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background-color: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive Layout- when the screen is less than 800px wide, make the two columns stack on top of each other insead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout- when the screen is less than 400px wide, make the navigation links stakc on top of each other instead of next to each other */
+
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The header -->
+    <div class="header">
+      <h1>My website</h1>
+      <p>Resize the browser window to see the effect.</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="topnav">
+      <a href="#">Link 01</a>
+      <a href="#">Link 02</a>
+      <a href="#">Link 03</a>
+      <a href="#" style="float: right">Link 04</a>
+    </div>
+
+    <!-- The contents -->
+    <div class="row">
+      <!-- The left Column -->
+      <div class="leftcolumn">
+        <!-- card body  01-->
+        <div class="card">
+          <h2>Title Heading</h2>
+          <h5>Title Description, Des 7, 2017</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>Some text...</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+            eius accusantium asperiores inventore dolorem nihil quisquam fugit
+            harum, amet optio earum pariatur quia iste recusandae, commodi
+            incidunt sit at dolor.
+          </p>
+        </div>
+
+        <!-- card body  02-->
+        <div class="card">
+          <h2>Title Heading</h2>
+          <h5>Title Description, Des 7, 2017</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>Some text...</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+            eius accusantium asperiores inventore dolorem nihil quisquam fugit
+            harum, amet optio earum pariatur quia iste recusandae, commodi
+            incidunt sit at dolor.
+          </p>
+        </div>
+      </div>
+      <!-- Close leftcolumn->
+
+      <!-- The right column -->
+      <div class="rightcolumn">
+        <!-- the card -->
+        <div class="card">
+          <h2>About me</h2>
+          <div class="fakeimg" style="height: 100px">Image</div>
+          <p>
+            Some text about me Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Explicabo vero, voluptate ex a possimus voluptas
+            architecto et labore voluptatum impedit sed quae commodi consequatur
+            nobis sequi consequuntur reiciendis! Natus, corporis?
+          </p>
+        </div>
+
+        <!-- the cards -->
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg">
+            <p>Image</p>
+          </div>
+
+          <div class="fakeimg">
+            <p>Image</p>
+          </div>
+
+          <div class="fakeimg">
+            <p>Image</p>
+          </div>
+        </div>
+
+        <!-- The Follow Me -->
+        <div class="card">
+          <h3>Follow me</h3>
+          <p>Some text...</p>
+        </div>
+      </div>
+      <!--Close rightcolumn-->
+    </div>
+    <!-- Close row -->
+
+    <!-- The footer -->
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+  </body>
+</html>
