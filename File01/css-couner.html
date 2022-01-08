@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Counter</title>
+    <style>
+      body {
+            counter-reset: section;
+        }
+        h1{
+            counter-reset: subsection;
+        }
+
+        h1::before {
+            counter-increment: section;
+            content: "Section " counter(section) ". ";
+        }
+
+        h2::before{
+            counter-increment: subsection;
+            content:counter(section)"." counter(subsection)
+        }
+
+        ol{
+            counter-reset: subsection;
+            list-style-type: none;
+        }
+
+        li::before{
+            counter-increment: subsection;
+            content:counters(subsection,".")" ";
+        }
+</style>
+
+<body>
+    </style>
+  </head>
+  <body>
+    <h1>HTML Tutorial</h1>
+    <h2>HTML Syntax</h2>
+    <h2>Semantic HTML</h2>
+    <h1>CSS Tutoriral</h1>
+    <h1>JavaScript Tutorial</h1>
+    <h1>Python Tutorial</h1>
+    <h1>SQL Tutorial</h1>
+    
+    <ol>
+        <li>itme</li>
+        <li>itme</li>
+        <li>itme
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+        </li>
+    </ol>
+</html>
