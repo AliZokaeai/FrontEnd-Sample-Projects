@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THe border image property</title>
+    <style>
+      #boderimg {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(img/border.png) 30 round;
+      }
+      #boderimag1 {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url("img/border.png") 30 stretch;
+      }
+
+      #borderimg2 {
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(img/border.png) 25% round;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The border-image Property</h1>
+    <p>
+      Here, the middle section of the image are repeated to create the border:
+    </p>
+    <p id="boderimg">Border-image : url (broder.ong) 30 round</p>
+
+    <p>Here is the original image: <img src="img/border.png" /></p>
+    <p>
+      <strong>Note:</strong> Internet Explorer 10, and earlier versions, don't
+      support the border-image property.
+    </p>
+    <hr />
+    <p id="boderimag1">an image as a border</p>
+    <hr />
+    <p id="borderimg2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+      tenetur laudantium reiciendis adipisci dolore, nobis unde obcaecati ab
+      totam quas necessitatibus ratione mollitia deleniti qui, praesentium ex
+      temporibus? Officiis, ad.
+    </p>
+  </body>
+</html>
