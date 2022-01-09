@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Backgrounds</title>
+    <style>
+      #example1 {
+        background-image: url("img/img_flwr.gif"), url("img/paper.gif");
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, repeat;
+        padding: 15px;
+      }
+      #example2 {
+        background: url("img/img_flwr.gif") right bottom no-repeat,
+          url("img/paper.gif") left top repeat;
+        padding: 15px;
+      }
+      #example3 {
+        border: 1px solid #000;
+        background: url("img/img_flwr.gif");
+        background-size: 100px 80px;
+        background-repeat: no-repeat;
+        padding: 15;
+      }
+
+      #example4 {
+        border: 1px solid black;
+        background: url("img/img_flwr.gif");
+        background-repeat: no-repeat;
+        padding: 15px;
+      }
+
+      .div1 {
+        border: 1px solid black;
+        height: 120px;
+        width: 150px;
+        background: url("img/img_flwr.gif");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .div2 {
+        border: 1px solid black;
+        height: 120px;
+        width: 150px;
+        background: url("img/img_flwr.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .div3 {
+        border: 1px solid black;
+        height: 120px;
+        width: 150px;
+        background: url(img/img_flwr.gif);
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Multiple background image</h1>
+    <p>The following div element has two backgrond images</p>
+    <div id="example1">
+      <h1>Lorem ipsum dolor sit.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+        blanditiis vero neque itaque? Doloribus repellat culpa, nulla autem
+        architecto odit vel, ab est eos natus eum qui aperiam modi suscipit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia
+        ab, doloremque explicabo corporis nostrum culpa dicta quidem enim,
+        beatae, iste delectus illum voluptatibus debitis nobis distinctio omnis
+        earum blanditiis!
+      </p>
+    </div>
+
+    <hr />
+
+    <div id="example2">
+      <h1>Lorem ipsum dolor sit.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+        blanditiis vero neque itaque? Doloribus repellat culpa, nulla autem
+        architecto odit vel, ab est eos natus eum qui aperiam modi suscipit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia
+        ab, doloremque explicabo corporis nostrum culpa dicta quidem enim,
+        beatae, iste delectus illum voluptatibus debitis nobis distinctio omnis
+        earum blanditiis!
+      </p>
+    </div>
+
+    <hr />
+
+    <div id="example3">
+      <h1>Lorem ipsum dolor sit.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+        blanditiis vero neque itaque? Doloribus repellat culpa, nulla autem
+        architecto odit vel, ab est eos natus eum qui aperiam modi suscipit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia
+        ab, doloremque explicabo corporis nostrum culpa dicta quidem enim,
+        beatae, iste delectus illum voluptatibus debitis nobis distinctio omnis
+        earum blanditiis!
+      </p>
+    </div>
+
+    <hr />
+
+    <div id="example4">
+      <h1>Lorem ipsum dolor sit.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+        blanditiis vero neque itaque? Doloribus repellat culpa, nulla autem
+        architecto odit vel, ab est eos natus eum qui aperiam modi suscipit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia
+        ab, doloremque explicabo corporis nostrum culpa dicta quidem enim,
+        beatae, iste delectus illum voluptatibus debitis nobis distinctio omnis
+        earum blanditiis!
+      </p>
+    </div>
+
+    <hr />
+
+    <h1>the background size property</h1>
+
+    <h2>background-size: contain;</h2>
+    <div class="div1">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste,
+        quisquam.
+      </p>
+    </div>
+
+    <h2>background-siz: cover;</h2>
+    <div class="div2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, modi.
+    </div>
+
+    <h2>No backgroudn-size defined;</h2>
+    <div class="div3">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, vero!
+      </p>
+    </div>
+
+    <p>Original image:</p>
+    <img src="img/img_flwr.gif" alt="flower" width="224" height="162" />
+  </body>
+</html>
