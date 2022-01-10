@@ -4,155 +4,259 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Multiple Backgrounds</title>
+    <title>Document</title>
     <style>
-      #example1 {
-        background-image: url("img/img_flwr.gif"), url("img/paper.gif");
-        background-position: right bottom, left top;
-        background-repeat: no-repeat, repeat;
-        padding: 15px;
+      #grad1 {
+        height: 200px;
+        background-color: red;
+        background-image: linear-gradient(to right, red, yellow);
       }
-      #example2 {
-        background: url("img/img_flwr.gif") right bottom no-repeat,
-          url("img/paper.gif") left top repeat;
-        padding: 15px;
+      #grad2 {
+        height: 200px;
+        background-color: red;
+        background-image: linear-gradient(to bottom right, red, yellow);
       }
-      #example3 {
-        border: 1px solid #000;
-        background: url("img/img_flwr.gif");
-        background-size: 100px 80px;
-        background-repeat: no-repeat;
-        padding: 15;
+      #grad3 {
+        height: 200px;
+        background-color: red;
+        background-image: linear-gradient(180deg, red, yellow);
       }
 
-      #example4 {
-        border: 1px solid black;
-        background: url("img/img_flwr.gif");
-        background-repeat: no-repeat;
-        padding: 15px;
+      #grad4 {
+        height: 200px;
+        background-color: red;
+        background-image: linear-gradient(red, yellow, green);
       }
-
-      .div1 {
-        border: 1px solid black;
-        height: 120px;
+      #grad5 {
+        height: 200px;
+        background-color: red;
+        background-image: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      }
+      #grad6 {
+        height: 200px;
+        background-color: transparent;
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 0, 0, 0),
+          rgba(255, 0, 0, 1)
+        );
+      }
+      #grad7 {
+        height: 200px;
+        background-color: red;
+        background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+      }
+      #grad8 {
+        height: 200px;
+        background-color: red;
+        background-image: repeating-linear-gradient(
+          45deg,
+          red,
+          yellow 7%,
+          green 10%
+        );
+      }
+      #grad9 {
+        height: 200px;
+        background-color: red;
+        background-image: repeating-linear-gradient(
+          90deg,
+          red,
+          yellow 7%,
+          green 10%
+        );
+      }
+      #grad10 {
+        height: 150px;
+        width: 200px;
+        float: left;
+        background-color: red;
+        background-image: radial-gradient(red, yellow, green);
+      }
+      #grad11 {
+        height: 150px;
+        width: 200px;
+        float: left;
+        background-color: red;
+        background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+      }
+      #grad12 {
+        height: 150px;
+        width: 200px;
+        float: left;
+        background-color: red;
+        background-image: radial-gradient(circle, red, yellow, green);
+      }
+      #grad13 {
+        height: 150px;
         width: 150px;
-        background: url("img/img_flwr.gif");
-        background-repeat: no-repeat;
-        background-size: contain;
+        float: left;
+        background-color: red;
+        background-image: radial-gradient(
+          closest-side at 60% 55%,
+          red,
+          yellow,
+          black
+        );
       }
 
-      .div2 {
-        border: 1px solid black;
-        height: 120px;
+      #grad14 {
+        height: 150px;
         width: 150px;
-        background: url("img/img_flwr.gif");
-        background-repeat: no-repeat;
-        background-size: cover;
+        float: left;
+        background-color: red;
+        background-image: radial-gradient(
+          farthest-side at 60% 55%,
+          red,
+          yellow,
+          black
+        );
       }
 
-      .div3 {
-        border: 1px solid black;
-        height: 120px;
+      #grad15 {
+        height: 150px;
         width: 150px;
-        background: url(img/img_flwr.gif);
-        background-repeat: no-repeat;
+        float: left;
+        background-color: red;
+        background-image: radial-gradient(
+          farthest-corner at 60% 55%,
+          red,
+          yellow,
+          black
+        );
+      }
+
+      #grad16 {
+        height: 150px;
+        width: 150px;
+        float: left;
+        background-color: red;
+        background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+      }
+
+      #grad17 {
+        height: 200px;
+        width: 200px;
+        float: left;
+        background-color: red;
+        background-image: conic-gradient(red, yellow, green);
+      }
+
+      #grad18 {
+        height: 200px;
+        width: 200px;
+        float: left;
+        background-color: red;
+        background-image: conic-gradient(red, yellow, green, blue);
+      }
+
+      #grad19 {
+        height: 200px;
+        width: 200px;
+        float: left;
+        background-color: red;
+        background-image: conic-gradient(
+          red 45deg,
+          yellow 90deg,
+          green 135deg,
+          blue 180deg
+        );
+      }
+
+      #grad20 {
+        height: 200px;
+        width: 200px;
+        float: left;
+        background-color: red;
+        background-image: conic-gradient(
+          red 45deg,
+          yellow 90deg,
+          green 135deg,
+          blue 180deg
+        );
+        border-radius: 50%;
+      }
+
+      #grad21 {
+        height: 200px;
+        width: 200px;
+        float: left;
+        background-color: red;
+        background-image: conic-gradient(
+          red 0deg,
+          red 90deg,
+          yellow 90deg,
+          yellow 180deg,
+          green 180deg,
+          green 270deg,
+          blue 270deg
+        );
+        border-radius: 50%;
+      }
+
+      #grad22 {
+        height: 200px;
+        width: 200px;
+        float: left;
+        background-color: red;
+        background-image: conic-gradient(
+          at 60% 45%,
+          red 0deg,
+          red 120deg,
+          yellow 120deg,
+          yellow 240deg,
+          violet 240deg
+        );
+        border-radius: 50%;
+      }
+
+      #grad23 {
+        height: 200px;
+        width: 200px;
+        float: left;
+        background-color: red;
+        background-image: repeating-conic-gradient(red 10%, yellow 20%);
+        border-radius: 50%;
       }
     </style>
   </head>
   <body>
-    <h1>Multiple background image</h1>
-    <p>The following div element has two backgrond images</p>
-    <div id="example1">
-      <h1>Lorem ipsum dolor sit.</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-        blanditiis vero neque itaque? Doloribus repellat culpa, nulla autem
-        architecto odit vel, ab est eos natus eum qui aperiam modi suscipit?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia
-        ab, doloremque explicabo corporis nostrum culpa dicta quidem enim,
-        beatae, iste delectus illum voluptatibus debitis nobis distinctio omnis
-        earum blanditiis!
-      </p>
-    </div>
-
-    <hr />
-
-    <div id="example2">
-      <h1>Lorem ipsum dolor sit.</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-        blanditiis vero neque itaque? Doloribus repellat culpa, nulla autem
-        architecto odit vel, ab est eos natus eum qui aperiam modi suscipit?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia
-        ab, doloremque explicabo corporis nostrum culpa dicta quidem enim,
-        beatae, iste delectus illum voluptatibus debitis nobis distinctio omnis
-        earum blanditiis!
-      </p>
-    </div>
-
-    <hr />
-
-    <div id="example3">
-      <h1>Lorem ipsum dolor sit.</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-        blanditiis vero neque itaque? Doloribus repellat culpa, nulla autem
-        architecto odit vel, ab est eos natus eum qui aperiam modi suscipit?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia
-        ab, doloremque explicabo corporis nostrum culpa dicta quidem enim,
-        beatae, iste delectus illum voluptatibus debitis nobis distinctio omnis
-        earum blanditiis!
-      </p>
-    </div>
-
-    <hr />
-
-    <div id="example4">
-      <h1>Lorem ipsum dolor sit.</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-        blanditiis vero neque itaque? Doloribus repellat culpa, nulla autem
-        architecto odit vel, ab est eos natus eum qui aperiam modi suscipit?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam mollitia
-        ab, doloremque explicabo corporis nostrum culpa dicta quidem enim,
-        beatae, iste delectus illum voluptatibus debitis nobis distinctio omnis
-        earum blanditiis!
-      </p>
-    </div>
-
-    <hr />
-
-    <h1>the background size property</h1>
-
-    <h2>background-size: contain;</h2>
-    <div class="div1">
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste,
-        quisquam.
-      </p>
-    </div>
-
-    <h2>background-siz: cover;</h2>
-    <div class="div2">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, modi.
-    </div>
-
-    <h2>No backgroudn-size defined;</h2>
-    <div class="div3">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, vero!
-      </p>
-    </div>
-
-    <p>Original image:</p>
-    <img src="img/img_flwr.gif" alt="flower" width="224" height="162" />
+    <h1>Linear Gradianet - Ledt to right</h1>
+    <p>
+      This linear graident start red at the left, transiting to yellow (to the
+      right):
+    </p>
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <div id="grad3"></div>
+    <div id="grad4"></div>
+    <div id="grad5"></div>
+    <div id="grad6"></div>
+    <div id="grad7"></div>
+    <div id="grad8"></div>
+    <div id="grad9"></div>
+    <div id="grad10"></div>
+    <div id="grad11"></div>
+    <div id="grad12"></div>
+    <div id="grad13"></div>
+    <div id="grad14"></div>
+    <div id="grad15"></div>
+    <div id="grad16"></div>
+    <div id="grad17"></div>
+    <div id="grad18"></div>
+    <div id="grad19"></div>
+    <div id="grad20"></div>
+    <div id="grad21"></div>
+    <div id="grad22"></div>
+    <div id="grad23"></div>
   </body>
 </html>
