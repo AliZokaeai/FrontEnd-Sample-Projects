@@ -31,6 +31,32 @@
       div.test:hover {
         overflow: visible;
       }
+      p.wordwrap {
+        width: 11em;
+        border: 1px solid #000;
+        word-wrap: break-word;
+      }
+      p.keepall {
+        width: 140px;
+        border: 1px solid #000;
+        word-break: keep-all;
+      }
+
+      p.breakall {
+        width: 140px;
+        border: 1px solid #000;
+        word-break: break-all;
+      }
+
+      p.horizentalTab {
+        writing-mode: horizontal-tb;
+      }
+      span.verticalRL {
+        writing-mode: vertical-lr;
+      }
+      p.verticalRL {
+        writing-mode: vertical-lr;
+      }
     </style>
   </head>
   <body>
@@ -62,5 +88,30 @@
     <div class="test" style="text-overflow: clip">
       This is some long text that will not fit in the box
     </div>
+
+    <hr />
+    <p class="wordwrap">
+      this is paragraph contain a very long word:
+      THisisaveryveryveryveryveryveryveyrlongword. The long word will break and
+      wrap to the next line.
+    </p>
+    <hr />
+    <h1>The word-break Property</h1>
+    <p class="keepall">
+      This Paragraph contains some text. This line will-break-at-hyphens.
+    </p>
+
+    <p class="breakall">
+      This paragraph contains some text. the line will break at any character.
+    </p>
+    <hr />
+    <p class="horizentalTab">Some text with default writing-mod.</p>
+
+    <p>
+      Some text with a span element with a
+      <span class="verticalRL">Verical-rl</span>Writing-mod
+    </p>
+
+    <p class="verticalRL">Some text with writing-mode: vertical-rl.</p>
   </body>
 </html>
