@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS transition model for select</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div.div {
+        float: left;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        margin: 20px;
+        border: 1px solid #000;
+        transition: background-image 2s, width 2s, height 2s, transform 2s;
+      }
+      .div:hover {
+        border: 1px solid red;
+        padding: 20px;
+        margin: 20px;
+        width: 600px;
+        height: 600px;
+        transform: rotate(360deg);
+        z-index: 100000;
+      }
+      .div img {
+        filter: grayscale(1);
+        transition: width 2s, height 2s, transform 2s, filter 2s;
+      }
+      .div:hover img {
+        filter: grayscale(0);
+        width: 560px;
+        height: 560px;
+        transform: rotate(360deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div style="overflow: none">
+      <div class="div">
+        <img src="img/pic1.jpg" alt="" width="280" height="280" />
+      </div>
+      <div class="div">
+        <img src="img/pic1.jpg" alt="" width="280" height="280" />
+      </div>
+      <div class="div">
+        <img src="img/pic1.jpg" alt="" width="280" height="280" />
+      </div>
+      <div class="div">
+        <img src="img/pic1.jpg" alt="" width="280" height="280" />
+      </div>
+    </div>
+  </body>
+</html>
