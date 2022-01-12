@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Animation</title>
+    <style>
+      .div1 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes example1 {
+        0% {
+          background-color: red;
+          top: 0px;
+          left: 0px;
+        }
+        20% {
+          background-color: yellow;
+          top: 100px;
+          left: 0px;
+        }
+        40% {
+          background-color: green;
+          top: 100px;
+          left: 100px;
+        }
+        60% {
+          background-color: blue;
+          top: 0px;
+          left: 100px;
+        }
+
+        80% {
+          background-color: red;
+          top: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animation</h1>
+    <div style="position: relative; top: 100px; left: 100px">
+      <div class="div1"></div>
+    </div>
+    <p>
+      <b>Note:</b> When an animation is finished, it goes back to its original
+      style.
+    </p>
+  </body>
+</html>
