@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Image Effects</title>
+    <style>
+      .container {
+        position: relative;
+        width: 50%;
+      }
+      .img1 {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: #008cba;
+      }
+      .container:hover .overlay {
+        opacity: 1;
+      }
+
+      .imgSahdow {
+        height: 100%;
+        width: 100%;
+        filter: grayscale(100%) blur(0px);
+      }
+
+      .txt1 {
+        color: white;
+        background-color: #201818;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        padding: 20px;
+      }
+      .txt1:hover {
+        background-color: rgb(133, 93, 7);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fade in overlay</h1>
+    <div class="container">
+      <img src="img/pic1.jpg" alt="" class="img1" />
+      <div class="overlay">
+        <img src="img/pic1.jpg" alt="" class="imgSahdow" />
+        <p class="txt1">The Text</p>
+      </div>
+    </div>
+  </body>
+</html>
